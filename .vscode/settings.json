@@ -1,0 +1,25 @@
+{
+  // Use the project's virtual environment for Python files, terminals and notebooks
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.terminal.activateEnvironment": true,
+
+  // Notebooks run with the project root as working directory,
+  // so paths like "data/raw/..." work from every notebook
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+
+  // Keep VS Code fast: don't watch or search the venv and the big data folders
+  "files.watcherExclude": {
+    "**/.venv/**": true,
+    "**/data/**": true,
+    "**/models/**": true
+  },
+  "search.exclude": {
+    "**/.venv": true,
+    "**/data": true,
+    "**/models": true
+  },
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.ipynb_checkpoints": true
+  }
+}

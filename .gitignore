@@ -1,0 +1,22 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets, trained models (large, re-created by the notebooks)
+data/raw/
+data/processed/
+models/
+
+# Secrets (API keys for DisGeNET / OMIM etc.)
+.env
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
